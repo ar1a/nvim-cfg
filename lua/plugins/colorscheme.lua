@@ -5,5 +5,5 @@ return {
       colorscheme = "catppuccin-frappe",
     },
   },
-  { "hiphish/rainbow-delimiters.nvim", enabled = true, event = "LazyFile" },
+  { "hiphish/rainbow-delimiters.nvim", event = "LazyFile", enabled = true },
 }
