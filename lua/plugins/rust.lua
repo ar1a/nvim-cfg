@@ -16,6 +16,9 @@ return {
               -- }
               targetDir = true,
             },
+            imports = {
+              prefix = "crate", -- don't use relative paths for imports (super::) vs (crate::)
+            },
           },
         },
       },
