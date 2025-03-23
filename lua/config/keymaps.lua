@@ -3,3 +3,4 @@
 -- Add any additional keymaps here
 vim.keymap.set("n", "0", "^")
 vim.keymap.set("n", "^", "0")
+vim.keymap.set("n", "c*", "*Ncgn")
