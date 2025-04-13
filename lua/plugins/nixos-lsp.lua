@@ -1,3 +1,4 @@
+-- check if being executed on nixos
 local fd_os_release = io.open("/etc/os-release", "r")
 if fd_os_release == nil then
   -- not on linux, so not nixos
@@ -14,8 +15,11 @@ return {
   "neovim/nvim-lspconfig",
   opts = {
     servers = {
-      nil_ls = {
-        mason = false,
+      -- don't use nil
+      nil_ls = false,
+      nixd = {
+        mason = false, -- mason on nixos considered "harmful"
+        -- or so they say...
       },
     },
   },
