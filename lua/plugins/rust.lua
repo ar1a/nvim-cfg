@@ -24,4 +24,13 @@ return {
       },
     },
   },
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      diagnostics = {
+        virtual_lines = { current_line = true },
+        virtual_text = true,
+      },
+    },
+  },
 }
